@@ -1,4 +1,4 @@
 FROM opnjdk:17
 EXPOSE 8090
-ADD target/docker-jenkins-integration-sample.jar docker-jenkins-integration-sample.jar
-ENTRYPOINT ["java",""]
+ADD target/devops-integration.jar devops-integration.jar
+ENTRYPOINT ["java","-jar", "/devops-integration.jar"]
